@@ -1,0 +1,142 @@
+.getcards{
+    /* overflow:visible; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 400px; */
+}
+.overallcard{
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+/* .getapp{
+   display: flex;
+   flex-direction: column;
+} */
+@media only screen and (min-width:1200px){
+    img{
+        height: 250px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    .getcards{
+        width: 700px;
+    
+    }
+    .getapp{
+        align-items: center;
+
+    }
+    /* .overallcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+}
+@media only screen and (max-width:1200px) and (min-width:992px){
+    img{
+        height: 250px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    .getcards{
+        width: 700px;
+    
+    }
+    .getapp{
+        align-items: center;
+
+    }
+    /* .overallcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+}
+@media only screen and (max-width:992px) and (min-width:768px){
+    img{
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+    }
+    .getcards{
+        width: 650px;
+    
+    }
+    .getapp{
+        align-items: center;
+
+    }
+    /* .overallcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+}
+@media only screen and (max-width:768px) and (min-width:576px){
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .getcards{
+        margin: 30px;
+        width: 550px;
+        
+    }
+    .getapp{
+        align-items: center;
+
+    }
+    /* .overallcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+}
+@media only screen and (max-width:576px) and (min-width:360px){
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .getcards{
+        width: 350px;
+        margin: 30px;
+    
+    }
+    .getapp{
+        align-items: center;
+
+    }
+    /* .overallcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+}
+@media only screen and (max-width:360px){
+    img{
+        height: 80px;
+        width: 200px;
+    }
+    .getcards{
+        width: 400px;
+
+    }
+    .getapp{
+        align-items: center;
+
+    }
+
+}
+    
