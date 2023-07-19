@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function AddData(){
   const [student,setStudent] = useState(data);
+
   const [id,setId]=useState("");
   const [name,setName]=useState("");
   const [age,setAge]=useState("");

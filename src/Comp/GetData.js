@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 
 function GetData(){
 const [student,setStudent] = useState(data);
+const [showAdd,setShowAdd] = useState(true);
+const [showUpdate,setShowUpdate] = useState(true);
 const [editId,setEditid] = useState("");
 const [show,setShow] = useState(false);
 const [id,setId]=useState("");
@@ -38,6 +40,8 @@ const handleClick = () =>{
  }
 
  const EditData = (studID) => {
+  setShowAdd(false);
+  setShowUpdate(true);
     setShow(!show)
     setEditid(studID)
     const selectedStudent = student.find(stud => stud.id == studID);
@@ -59,6 +63,8 @@ const handleClick = () =>{
     student[dataIndex] = updateObj;
     setStudent([...student])
     presentToast({message:"updated Sucessfully",duration:1500,})
+    setShowAdd(true);
+    setShowUpdate(false);
 }
     return(
         <IonPage>
@@ -131,9 +137,9 @@ const handleClick = () =>{
                   </IonInput>
               </IonItem>
             </IonList>
-            
-            <IonButton onClick={handleClick}>ADD Data</IonButton>
-            <IonButton onClick={updateData}>Update data</IonButton>
+            {showAdd ?<IonButton onClick={handleClick}>ADD Data</IonButton> : "" }
+            {showUpdate ? <IonButton onClick={updateData}>Update data</IonButton> : "" }
+           
             
         </IonPage>
     );
